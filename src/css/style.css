@@ -8,6 +8,7 @@ body,
 input,
 button {
   font-family: "Open Sans", sans-serif;
+  color: #05989E;
 }
 
 input,
@@ -20,7 +21,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: cornflowerblue;
+  background-color: #05989E;
   color: white;
 }
 
@@ -35,13 +36,13 @@ main {
   display: flex;
   flex-direction: column;
   padding: 16px;
-  border: 1px solid black;
+  border: 1px solid #05989E;
   border-radius: 10px;
 }
 
 .input_section > h2 {
   text-align: center;
-  color: cornflowerblue;
+  color: #05989E;
 }
 
 .input_section > form > .input {
@@ -49,7 +50,7 @@ main {
 }
 
 .input_section > form > button {
-  background-color: cornflowerblue;
+  background-color: #05989E;
   color: white;
   border: 0;
   border-radius: 5px;
@@ -68,10 +69,11 @@ main {
   width: 100%;
   padding: 8px;
   border-radius: 5px;
+  border: 1px solid #05989E;
 }
 
 .input_section > form > .input > label {
-  color: cornflowerblue;
+  color: #05989E;
   font-weight: bold;
 }
 
@@ -82,7 +84,7 @@ main {
 }
 
 .input_section > form > .input_inline > label {
-  color: cornflowerblue;
+  color: #05989E;
   font-weight: bold;
   margin-right: 10px;
 }
@@ -93,12 +95,12 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 16px;
-  border: 1px solid black;
+  border: 1px solid #05989E;
   border-radius: 10px;
 }
 
 .search_section > h2 {
-  color: cornflowerblue;
+  color: #05989E;
 }
 
 .search_section > form {
@@ -117,10 +119,11 @@ main {
 .search_section > form > input {
   padding: 5px;
   border-radius: 5px;
+  border: 1px solid #05989E;
 }
 
 .search_section > form > button {
-  background-color: cornflowerblue;
+  background-color: #05989E;
   color: white;
   border: 0;
   border-radius: 5px;
@@ -129,47 +132,30 @@ main {
 
 .book_shelf {
   margin: 16px 0 0 0;
-  border: 1px solid black;
+  border: 1px solid #05989E;
   padding: 16px;
   border-radius: 10px;
 }
 
 .book_shelf > h2 {
-  color: cornflowerblue;
+  color: #05989E;
 }
 
 .book_shelf > .book_list {
   padding: 16px;
 }
 
-/* .book_shelf > .book_list > .book_item {
-    padding: 8px 16px 16px 16px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 10px 0;
+button:active {
+  transform: translateY(4px);
+  transition: 200ms;
 }
 
-.book_shelf > .book_list > .book_item > h3, p {
-    margin: 8px 0;
+button:hover {
+  transition: all 0.6s ease;
+  transform: scale(1.03);
+  transform-origin: center;
+  transition: 200ms;
 }
-
-.book_shelf > .book_list > .book_item > .action > button {
-    border: 0;
-    padding: 5px;
-    margin: 0 5px 0 0;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.book_shelf > .book_list > .book_item > .action > .green {
-    background-color: darkgreen;
-    color: white;
-}
-
-.book_shelf > .book_list > .book_item > .action > .red {
-    background-color: darkred;
-    color: white;
-} */
 
 .shadow {
   border: 5px solid #333;
@@ -178,60 +164,52 @@ main {
 }
 
 .item {
+  color : #05989E;
   border-radius: 16px;
   margin-top: 16px;
   padding: 12px 24px 12px 24px;
   background: white;
   display: flex;
   align-items: center;
-  border: 5px solid #9ca0b9;
+  border: 1px solid #05989E;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+  0 15px 40px rgba(166, 173, 201, 0.2);
 }
 
 .check-button {
-  background: url("./check-outline.svg");
+  background: url("../assets/check.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin-left: auto;
   cursor: pointer;
   border: none;
 }
 
-.check-button:hover {
-  background: url("./check-solid.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 .trash-button {
-  background: url("./trash-outline.svg");
+  background: url("../assets/trash-outline.svg");
   background-size: contain;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   margin-left: 16px;
   cursor: pointer;
   border: none;
 }
 
 .trash-button:hover {
-  background: url("./trash-fill.svg");
+  background: url("../assets/trash-fill.svg");
   background-size: contain;
 }
 
 .undo-button {
-  background: url("./undo-outline.svg");
+  background: url("../assets/undo.png");
   background-size: contain;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin-left: auto;
   cursor: pointer;
   border: none;
-}
-
-.undo-button:hover {
-  background: url("./undo-fill.svg");
-  background-size: contain;
 }
 
 .check-button:focus,
