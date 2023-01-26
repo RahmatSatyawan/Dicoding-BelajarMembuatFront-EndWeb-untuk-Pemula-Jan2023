@@ -73,7 +73,14 @@ function renderBook(book) {
       addBookToCompleted(book.id);
     });
 
-    container.append(checkButton);
+    const trashButton = document.createElement("button");
+    trashButton.classList.add("trash-button");
+    trashButton.addEventListener("click", function () {
+      removeBookFromCompleted(book.id);
+      document.dispatchEvent(new Event(DELETE_EVENT));
+    });
+
+    container.append(checkButton, trashButton);
   }
 
   return container;
